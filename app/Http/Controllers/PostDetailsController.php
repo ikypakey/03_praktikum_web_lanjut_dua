@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class about extends Controller
+class PostDetailsController extends Controller
 {
     //
 }
