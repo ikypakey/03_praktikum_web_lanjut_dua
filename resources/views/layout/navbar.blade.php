@@ -8,22 +8,22 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
+              <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+                <a class="nav-link" href="/">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+              <li class="nav-item {{ Request::is('about') ? 'active' : '' }}">
+                <a class="nav-link" href="/about">About Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog Entries</a>
+              <li class="nav-item {{ Request::is('blog') ? 'active' : '' }}">
+                <a class="nav-link" href="/blog">Blog Entries</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="post-details.html">Post Details</a>
+              <li class="nav-item {{ Request::is('post-details') ? 'active' : '' }}">
+                <a class="nav-link" href="/post-details">Post Details</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+              <li class="nav-item {{ Request::is('contact') ? 'active' : '' }}">
+                <a class="nav-link" href="/contact">Contact Us</a>
               </li>
             </ul>
           </div>
